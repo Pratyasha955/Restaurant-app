@@ -23,6 +23,12 @@ ul {
     padding-right: 20px; /* Adjust padding for spacing */
   }
   
+  .form-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+  }
   
   .price {
     color: rgb(255, 0, 0);
