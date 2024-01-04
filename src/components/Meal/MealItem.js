@@ -1,3 +1,4 @@
+// MealItem.js
 
 import React from 'react';
 import MealForm from './MealForm';

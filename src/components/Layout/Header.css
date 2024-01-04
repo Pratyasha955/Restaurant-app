@@ -3,16 +3,19 @@
 /* Styles for the header */
 .header {
     background-color: rgb(158, 29, 29);
+    position: fixed;
     color: white;
-    display: flex;
-    justify-content: space-between;
+    top: 0;
+    width: 100%;
     align-items: center;
-    padding: 10px;
+    justify-content: center;
+    padding: 15px;
   }
   
   .left-side h1 {
     margin: 0;
-    margin-left: 130px;
+    float: left;
+    margin-left: 100px;
   }
   
   /* Styles for the cart button */
@@ -31,8 +34,9 @@
   .right-side {
     display: flex;
     padding: 10px;
+    float: right;
     width: 200px;
-    margin-right: 150px;
+    margin-left: 750px;
     background-color: rgb(112, 25, 25);
     border-radius: 26px;
   }
