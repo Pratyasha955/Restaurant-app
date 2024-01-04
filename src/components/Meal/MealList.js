@@ -55,7 +55,7 @@ const Meallist = () => {
 
   return (
     <div>
-        <ul>{mealsList}</ul>
+        <ul className="MealList">{mealsList}</ul>
     </div>
   );
 };

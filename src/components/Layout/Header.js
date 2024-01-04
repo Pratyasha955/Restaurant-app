@@ -6,17 +6,11 @@ import "./Header.css";
 const Header = (props) => {
   return (
     <header className="header">
-      <div className="left-side">
         <h1>ReactMeals</h1>
-      </div>
       <button className="cart-button"  onClick={props.onShowCart}>
-        <div className="right-side">
-          <div className="cart-icon">
-            <FontAwesomeIcon icon={faShoppingCart} />
+        <span className='cart-icon'><FontAwesomeIcon icon={faShoppingCart} /></span>
             <span className="cart">Your Cart</span>
             <span className="cart-count">0</span>
-          </div>
-        </div>
       </button>
     </header>
   );
