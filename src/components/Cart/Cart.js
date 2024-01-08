@@ -6,6 +6,7 @@ import "./Cart.css";
 
 const Cart = (props) => {
   const cartContext = React.useContext(CartContext); // Access cart context
+  const totalAmount = `$${cartContext.totalAmount.toFixed(2)}`;
   const cartItemRemoveHandler = (id) => {
     cartContext.removeItem(id);
   };
@@ -33,7 +34,7 @@ const Cart = (props) => {
       {cartItems}
       <div className="total">
         <span>Total Amount</span>
-        <span>${cartContext.totalAmount}</span>
+        <span>{totalAmount}</span>
       </div>
       <div className="actions">
         <button className="close-button" onClick={props.onClose}>
